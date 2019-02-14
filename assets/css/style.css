@@ -1,0 +1,33 @@
+body{
+    background-image: url("../images/img1.jpg")
+}
+header{
+    background-color: black;
+     padding: 20px;
+     width: 100%;
+}
+h1{
+    font-family: cursive;
+    text-align: center;
+    color: cornflowerblue;
+    font-weight: bold;
+}
+.container{
+    width: 90%;
+    padding: 20px;
+    background-color: aliceblue;
+   
+}
+p{
+    font-size: 16px;
+    font-weight: bold;
+}
+#display{
+    text-align: right;
+    color: lightcoral;
+}
+form{
+    padding: 20px;
+    margin-left: 20px;
+
+}
