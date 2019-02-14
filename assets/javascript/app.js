@@ -1,13 +1,15 @@
+
 $(document).ready (function(){
-    
+    $("#timeOff").hide();
 // to hide to page before starting
 $('.page').hide();
 // show the question once the start button is clicked
 $('#show').click(function(){
 
   $('.page').show();
+  $('#show').hide();
   // start the countdown
-  var time = 60;
+  var time = 5;
   var timer = setInterval(count,1000);
   function count(){
     time--;
@@ -17,7 +19,14 @@ $('#show').click(function(){
     if (time === 0){
       clearInterval(timer);
       //$('#input').off("click","radio")
+      document.getElementById('timeOff').innerHTML = "Yor time is off";
+      $('.page').hide();
       $('input').off("click");
+      $('#show').show();
+      $("#timeOff").show();
+      console.log("You answered " + choiceright+ " "+"correct.");
+      $("#result").text("You answered " + choiceright+ " "+"correct.");
+
     }
 
   }
@@ -46,7 +55,7 @@ function timeConverter(t) {
        return minutes + ":" + seconds;
      }
 
-
+     var choiceright= 0;
   $('input').click(function(){
     if (this.value ==='right'){
       choiceright++;
@@ -57,5 +66,10 @@ function timeConverter(t) {
     console.log(choiceright);
 
    
+  });
+  $('#submit').click(function(){
+
+    alert("You got" + choiceright+ " "+"correct.");
+   $("#result").text("You answered " + choiceright+ " "+"correct.");
   });
 });

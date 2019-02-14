@@ -16,6 +16,7 @@ h1{
     width: 90%;
     padding: 20px;
     background-color: aliceblue;
+    height: auto;
    
 }
 p{
@@ -29,5 +30,23 @@ p{
 form{
     padding: 20px;
     margin-left: 20px;
+
+}
+
+#timeOff{
+    text-align: center;
+    font-size: 40px;
+    height: 900px;
+}
+
+#show{
+    margin-top: 20px;
+    
+
+}
+#result{
+    text-align: center;
+    font-size: 20px;
+    color: rgb(81, 128, 35);
 
 }
