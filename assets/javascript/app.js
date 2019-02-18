@@ -13,7 +13,7 @@ $(document).ready(function () {
     $('#show').hide();
     $('#grade').hide();
     // start the countdown
-    var time = 10;
+    var time = 20;
     var timer = setInterval(count, 1000);
     function count() {
       time--;
